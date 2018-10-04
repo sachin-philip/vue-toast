@@ -1,8 +1,12 @@
 <template>
     <transition :enter-active-class="enterActiveClass" :leave-active-class="leaveActiveClass" @before-enter="beforeEnter" @after-enter="afterEnter" @before-leave="beforeLeave">
-        <div class="notification" v-bind:class="'is-success'+type" v-if="show">
-            <button class="delete" role="button" @click="hideToastr" v-if="closeButton"></button>
-            {{message}}
+        <div class="toast" :class="['toast-'+type]" :style="{backgroundColor:toastBackgroundColor}" v-if="show">
+            <button class="toast-close-button" role="button" @click="hideToastr" v-if="closeButton">×</button>
+            <div class="toast-progress" v-if="progressBar" :style="'width: ' + progress.percent + '%'"></div>
+            <div class="toast-icon">
+            <img :src="iconSrc"/>
+            </div>
+            <div class="toast-message">{{message}}</div>
         </div>
     </transition>
 </template>
@@ -106,7 +110,4 @@ export default {
 }
 
 </script>
-<style lang='sass'>
-@import './assets/style.sass'
-</style>
 

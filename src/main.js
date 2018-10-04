@@ -1,5 +1,5 @@
 import Toastr from './Toastr'
-import '@/assets/toast.css'
+import './assets/toast.css'
 import 'animate.css/animate.css'
 
 const BulmaToastr = {
@@ -24,7 +24,7 @@ const BulmaToastr = {
             return component
         }
 
-        Vue.prototype.$toast = {
+        Vue.prototype.$toastr = {
             success(obj) {
                 return showToast(obj, 'success')
             },

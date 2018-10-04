@@ -1,6 +1,8 @@
-# vue-bulma-toastr
+# Vue Bulma Toastr
 
-# THIS IS ON TESTING PHASE NOT STABLE
+Package contains a bulma based vue toastr component. All classes of vue notificationa are inheritted over here.
+
+## Note: THIS IS ON TESTING PHASE And NOT STABLE
 
 ## Setup
 

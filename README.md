@@ -1,21 +1,54 @@
 # vue-bulma-toastr
 
-## Project setup
+## Setup
+
+Using npm
+```bash
+npm install  vue-bulma-toastr --save
 ```
-npm install
+Or using yarn
+```bash
+yarn add  vue-bulma-toastr
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+## Usage
+### Import Component
+```javascript
+import BulmaToastr from 'vue-bulma-toastr'
+
+Vue.use(BulmaToastr)
 ```
 
-### Compiles and minifies for production
-```
-npm run build
+Optional Global configuration options
+```javascript
+var toastrConfigs = {
+    position: 'top right',
+    showDuration: 2000
+}
+Vue.use(BulmaToastr, toastrConfigs)
 ```
 
-### Lints and fixes files
+### Call Notification Instance
+```javascript
+this.$toast.success({
+    message:''
+})
 ```
-npm run lint
-```
+
+### type
+
+* `success`
+* `info`
+* `warning`
+* `error`
+
+### position
+
+* `top right`
+* `bottom right`
+* `bottom left`
+* `top left`
+* `top center`
+* `bottom center`
+* `top full width`
+* `bottom full width`

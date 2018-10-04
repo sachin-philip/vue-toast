@@ -1,5 +1,7 @@
 # vue-bulma-toastr
 
+# THIS IS ON TESTING PHASE NOT STABLE
+
 ## Setup
 
 Using npm

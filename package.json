@@ -1,8 +1,8 @@
 {
   "name": "vue-bulma-toastr",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "private": false,
-  "licence": "ISC",
+  "licence": "MIT",
   "description": "Vue bulma toastr component",
   "author": "sachin philip mathew <me@imsach.in>",
   "main": "./dist/js/app.8b810a0b.js",

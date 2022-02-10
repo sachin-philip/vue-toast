@@ -22,7 +22,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^1.0.0",
-    "node-sass": "^4.9.3",
+    "node-sass": "^7.0.0",
     "sass-loader": "^7.1.0",
     "uglifyjs-webpack-plugin": "^2.1.1",
     "vue-loader": "^15.6.2",
